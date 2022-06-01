@@ -2,7 +2,7 @@ server:
   port: 8282
 spring:
   datasource:
-    url: jdbc:h2:mem:online_order_db
+    url: jdbc:h2:mem:tp4DB
     username: user
     password: pswd
     driver-class-name: org.h2.Driver
