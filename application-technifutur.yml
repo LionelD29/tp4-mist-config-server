@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    consul:
+      host: 10.26.128.7
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${random.uuid}
