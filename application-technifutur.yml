@@ -10,5 +10,3 @@ spring:
         port: ${server.port}
         service-name: ${spring.application.name}
         instance-id: ${spring.application.name}:${random.uuid}
-  zipkin:
-    base-url: ${application.properties.host}:9411/
