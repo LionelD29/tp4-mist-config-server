@@ -1,7 +1,7 @@
 spring:
   cloud:
     consul:
-      host: 10.26.128.7
+      host: 10.27.1.4
       port: 8500
       discovery:
         port: ${server.port}
