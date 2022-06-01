@@ -1,10 +1,7 @@
-application:
-  properties:
-    host: 10.26.128.7
 spring:
   cloud:
     consul:
-      host: ${application.properties.host}
+      host: 10.26.128.7
       port: 8500
       discovery:
         port: ${server.port}
