@@ -1,8 +1,13 @@
+application:
+  properties:
+    host: 10.26.128.7
 spring:
   cloud:
     consul:
-      host: 10.26.128.7
+      host: ${application.properties.host}
       port: 8500
       discovery:
         service-name: ${spring.application.name}
         instance-id: ${spring.application.name}:${random.uuid}
+  zipkin:
+    base-url: ${application.properties.host}:9411/
