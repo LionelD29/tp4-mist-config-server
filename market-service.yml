@@ -11,10 +11,6 @@ spring:
   sql:
     init:
       mode: always
-  config:
-    activate:
-      on-profile:
-        dev
   h2:
     console:
       enabled: true
